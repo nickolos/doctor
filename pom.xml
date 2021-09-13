@@ -51,21 +51,9 @@
             <artifactId>exec-maven-plugin</artifactId>
             <version>3.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>axios</artifactId>
-            <version>0.21.1</version>
-        </dependency>
     </dependencies>
 
     <build>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/front/build</directory>
-                <filtering>false</filtering>
-                <targetPath>public/</targetPath>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
